@@ -37,6 +37,8 @@ type FlexboxProps = {
   gridTemplateColumns?: string
 }
 
+export type Props = LayoutProps & FontProps & FlexboxProps
+
 export const Box = styled.div<LayoutProps & FontProps & FlexboxProps>`
   box-sizing: border-box;
   ${props => css`

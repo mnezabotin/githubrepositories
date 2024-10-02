@@ -1,4 +1,4 @@
-import { Box, Grid, Span, Img } from '@/styles'
+import { Box, Grid, Img, Span } from '@/styles'
 import { Search } from '@/components/Search'
 import githubImg from '@/assets/github-mark.svg'
 

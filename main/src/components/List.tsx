@@ -2,7 +2,9 @@ import { Box, Flex, Span, Img, Grid } from '@/styles'
 import type { Repository } from '@/types'
 
 import gitImg from '@/assets/git.svg'
-import { LoadingList } from './LoadingList'
+import { LoadingList } from 'styles/LoadingList'
+
+console.log(LoadingList)
 
 type Props = {
   repositories: Repository[]
@@ -31,7 +33,7 @@ export const List = ({ repositories = [], loading, perPage }: Props): JSX.Elemen
       <Box>Кол-во звёзд</Box>
       <Box textAlign='center'>Дата последнего коммита</Box>
     </Grid>
-    {loading ? <LoadingList perPage={perPage} /> : repositories.map((r) => (
+    {loading ? <LoadingList /> : repositories.map((r) => (
       <Grid
         key={r.id}
         gridTemplateColumns='3fr 1fr 2fr 138px'
